@@ -21,8 +21,7 @@ end display;
 
 architecture displayArch of display is
 signal displayed_number: STD_LOGIC_VECTOR (31 downto 0);
-signal temp: STD_LOGIC_VECTOR(7 downto 0);
-signal tempu: STD_LOGIC_VECTOR(7 downto 0);   	
+signal temp: STD_LOGIC_VECTOR(7 downto 0); 	
 begin	
 	process(writeEnable, right, left, LED, enter, displayed_number,blink,blinkAlt) 
 	begin  
